@@ -1,0 +1,9 @@
+class AtaqueForte(Habilidade):
+    def usar(self, atacante, alvo):
+        dano = atacante.força + 10
+        alvo.receber_dano(dano)
+
+class BolaDeFogo(Habilidade):
+    def usar(self, atacante, alvo):
+        dano = 20
+        alvo.receber_dano(dano)

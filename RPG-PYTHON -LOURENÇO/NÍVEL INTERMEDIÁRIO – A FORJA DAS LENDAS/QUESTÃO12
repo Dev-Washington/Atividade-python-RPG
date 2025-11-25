@@ -1,0 +1,14 @@
+class Personagem:
+    def __init__(self, nome, vida, força):
+        self.nome = nome
+        self.__vida = vida
+        self.força = força
+
+    def get_vida(self):
+        return self.__vida
+
+    def set_vida(self, nova_vida):
+        if nova_vida < 0:
+            self.__vida = 0
+        else:
+            self.__vida = nova_vida

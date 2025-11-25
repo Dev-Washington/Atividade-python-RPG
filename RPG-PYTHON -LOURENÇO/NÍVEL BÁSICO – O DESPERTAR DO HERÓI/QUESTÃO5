@@ -1,0 +1,8 @@
+class Guerreiro:
+    def __init__(self, nome, vida, força):
+        self.nome = nome
+        self.vida = vida
+        self.força = força
+
+    def __str__(self):
+        return f"Guerreiro {self.nome} | Vida: {self.vida} | Força: {self.força}"

@@ -1,0 +1,14 @@
+class Batalha:
+    def iniciar(self):
+        turno = 0
+        while self.a.esta_vivo() and self.b.esta_vivo():
+            if turno % 2 == 0:
+                self.a.atacar(self.b)
+            else:
+                self.b.atacar(self.a)
+            turno += 1
+
+        if self.a.esta_vivo():
+            print(f"{self.a.nome} venceu!")
+        else:
+            print(f"{self.b.nome} venceu!")

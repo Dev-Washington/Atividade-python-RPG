@@ -1,0 +1,7 @@
+class Monstro:
+    def __init__(self, nome, vida, força):
+        self.nome = nome
+        self.vida = vida
+        self.força = força
+
+goblin = Monstro("Goblin", 30, 5)

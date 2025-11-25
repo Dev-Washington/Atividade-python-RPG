@@ -1,0 +1,9 @@
+class Personagem:
+    def __init__(self, nome, vida, força):
+        self.nome = nome
+        self.vida = vida
+        self.força = força
+        self.habilidades = []
+
+    def usar_habilidade(self, habilidade, alvo):
+        habilidade.usar(self, alvo)

@@ -1,0 +1,14 @@
+class Personagem:
+    def __init__(self, nome, vida, força):
+        self.nome = nome
+        self.vida = vida
+        self.força = força
+
+    def atacar(self, alvo):
+        print(f"{self.nome} atacou {alvo.nome}!")
+        alvo.receber_dano(self.força)
+
+    def receber_dano(self, dano):
+        self.vida -= dano
+        if self.vida < 0:
+            self.vida = 0

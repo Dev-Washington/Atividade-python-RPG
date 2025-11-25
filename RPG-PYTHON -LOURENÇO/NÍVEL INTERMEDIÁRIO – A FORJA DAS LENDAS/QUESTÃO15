@@ -1,0 +1,6 @@
+class Inventario:
+    def __init__(self):
+        self.itens = []
+
+    def adicionar_item(self, item):
+        self.itens.append(item)

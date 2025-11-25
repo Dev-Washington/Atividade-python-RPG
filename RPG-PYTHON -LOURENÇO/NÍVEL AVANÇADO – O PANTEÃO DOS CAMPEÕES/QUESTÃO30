@@ -1,0 +1,22 @@
+class BatalhaEquipes:
+    def __init__(self, equipe1, equipe2):
+        self.e1 = equipe1
+        self.e2 = equipe2
+
+    def iniciar(self):
+        while any(p.esta_vivo() for p in self.e1) and any(p.esta_vivo() for p in self.e2):
+            atacante = next(p for p in self.e1 if p.esta_vivo())
+            alvo = next(p for p in self.e2 if p.esta_vivo())
+            atacante.atacar(alvo)
+
+            if not any(p.esta_vivo() for p in self.e2):
+                break
+
+            atacante = next(p for p in self.e2 if p.esta_vivo())
+            alvo = next(p for p in self.e1 if p.esta_vivo())
+            atacante.atacar(alvo)
+
+        if any(p.esta_vivo() for p in self.e1):
+            print("Equipe 1 venceu!")
+        else:
+            print("Equipe 2 venceu!")

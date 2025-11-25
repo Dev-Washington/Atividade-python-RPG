@@ -1,0 +1,12 @@
+class Personagem:
+    def __init__(self, nome, vida, força, vida_max):
+        self.nome = nome
+        self.vida = vida
+        self.vida_max = vida_max
+        self.força = força
+        self.inventario = Inventario()
+
+    def usar_pocao(self, pocao):
+        self.vida += pocao.cura
+        if self.vida > self.vida_max:
+            self.vida = self.vida_max

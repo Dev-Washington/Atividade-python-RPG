@@ -1,0 +1,6 @@
+class Pocao:
+    def __init__(self, nome, cura):
+        self.nome = nome
+        self.cura = cura
+
+pocao_vida = Pocao("Poção de Vida", 20)

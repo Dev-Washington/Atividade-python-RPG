@@ -1,0 +1,8 @@
+import random
+
+class Orc(Monstro):
+    def atacar(self, alvo):
+        dano = self.força
+        if random.randint(1, 5) == 1:   # 20% de crítico
+            dano *= 2
+        alvo.receber_dano(dano)

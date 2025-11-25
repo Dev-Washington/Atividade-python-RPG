@@ -1,0 +1,6 @@
+class Arqueiro:
+    def __init__(self, nome, vida, força, precisão):
+        self.nome = nome
+        self.vida = vida
+        self.força = força
+        self.precisão = precisão

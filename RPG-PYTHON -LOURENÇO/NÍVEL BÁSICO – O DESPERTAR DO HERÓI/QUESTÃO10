@@ -1,0 +1,15 @@
+class Guerreiro:
+    def __init__(self, nome, vida, força):
+        self.nome = nome
+        self.vida = vida
+        self.força = força
+        self.arma = None
+
+    def equipar_arma(self, arma):
+        self.arma = arma
+
+    def atacar(self):
+        dano = self.força
+        if self.arma:
+            dano += self.arma.dano
+        print(f"{self.nome} atacou causando {dano} de dano!")

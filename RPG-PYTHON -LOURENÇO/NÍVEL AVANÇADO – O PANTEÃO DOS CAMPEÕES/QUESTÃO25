@@ -1,0 +1,7 @@
+class Personagem:
+    def atacar(self, alvo):
+        from random import randint
+        variacao = randint(-2, 2)
+        dano = self.força + variacao
+        if dano < 0: dano = 0
+        alvo.receber_dano(dano)

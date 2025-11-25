@@ -1,0 +1,3 @@
+class Habilidade:
+    def usar(self, atacante, alvo):
+        raise NotImplementedError("Implementar na classe filha!")

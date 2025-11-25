@@ -1,0 +1,6 @@
+class Mago:
+    def __init__(self, nome, vida, força, poder_magico):
+        self.nome = nome
+        self.vida = vida
+        self.força = força
+        self.poder_magico = poder_magico

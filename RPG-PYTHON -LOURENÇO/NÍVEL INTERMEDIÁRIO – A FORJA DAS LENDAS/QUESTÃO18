@@ -1,0 +1,9 @@
+class Mago(Personagem):
+    def atacar(self, alvo):
+        dano = self.força + 5
+        alvo.receber_dano(dano)
+
+class Arqueiro(Personagem):
+    def atacar(self, alvo):
+        dano = self.força + 3
+        alvo.receber_dano(dano)

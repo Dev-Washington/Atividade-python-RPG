@@ -1,0 +1,13 @@
+class Personagem:
+    def __init__(self, nome, vida, força):
+        self.nome = nome
+        self.__vida = vida
+        self.força = força
+
+    def receber_dano(self, dano):
+        self.__vida -= dano
+        if self.__vida < 0:
+            self.__vida = 0
+
+    def get_vida(self):
+        return self.__vida

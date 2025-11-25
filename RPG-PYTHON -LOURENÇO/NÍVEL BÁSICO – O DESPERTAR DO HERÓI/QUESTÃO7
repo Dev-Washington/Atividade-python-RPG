@@ -1,0 +1,7 @@
+class Arma:
+    def __init__(self, nome, dano):
+        self.nome = nome
+        self.dano = dano
+
+espada_longa = Arma("Espada Longa", 10)
+cajado_magico = Arma("Cajado Mágico", 8)

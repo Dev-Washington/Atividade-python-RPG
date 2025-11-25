@@ -1,0 +1,14 @@
+class Personagem:
+    def __init__(self, nome, vida, força):
+        self.nome = nome
+        self.vida = vida
+        self.força = força
+
+class Guerreiro(Personagem):
+    pass
+
+class Mago(Personagem):
+    pass
+
+class Arqueiro(Personagem):
+    pass

@@ -1,0 +1,8 @@
+class Guerreiro:
+    def __init__(self, nome, vida, força):
+        self.nome = nome
+        self.vida = vida
+        self.força = força
+
+    def atacar(self):
+        print(f"{self.nome} atacou com força {self.força}!")
